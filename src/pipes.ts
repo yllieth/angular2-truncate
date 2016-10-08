@@ -1,10 +1,10 @@
 // Import all pipes
-import {SamplePipe} from './pipes/sample.pipe';
+import { TruncatePipe } from './pipes/truncate.pipe';
 
 // Export all pipes
-export * from './pipes/sample.pipe';
+export * from './pipes/truncate.pipe';
 
 // Export convenience property
 export const PIPES: any[] = [
-  SamplePipe
+  TruncatePipe
 ];

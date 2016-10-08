@@ -1,5 +1,5 @@
 {
-  "name": "angular2-library",
+  "name": "angular2-truncate",
   "version": "0.1.0",
   "scripts": {
     "lint": "tslint src/**/*.ts",
@@ -17,10 +17,7 @@
     "name": "Sylvain RAGOT",
     "email": "sylvnimes@hotmail.com"
   },
-  "keywords": [
-    "angular",
-    "angular2"
-  ],
+  "keywords": [ "angular2", "truncate", "strings" ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yllieth/angular2-truncate/issues"
