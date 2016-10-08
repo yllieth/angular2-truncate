@@ -7,7 +7,7 @@ A simple angular2 pipe which truncate strings.
 To install this library, run:
 
 ```bash
-$ npm install angular2-library --save
+$ npm install angular2-truncate --save
 ```
 
 ## Usage
