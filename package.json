@@ -17,22 +17,25 @@
     "name": "Sylvain RAGOT",
     "email": "sylvnimes@hotmail.com"
   },
-  "keywords": [ "angular2", "truncate", "strings" ],
+  "keywords": [
+    "angular2",
+    "truncate",
+    "strings"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/yllieth/angular2-truncate/issues"
   },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "@angular/core": "2.0.0-rc.3",
     "codelyzer": "^0.0.20",
     "rxjs": "5.0.0-beta.6",
     "tslint": "^3.6.0",
     "typescript": "^1.8.10",
-    "typings":"^1.0.4",
+    "typings": "^1.0.4",
     "zone.js": "0.6.12"
   },
   "engines": {
