@@ -6,6 +6,22 @@ import { Injectable, PipeTransform, Pipe } from '@angular/core';
 })
 @Injectable()
 export class TruncatePipe implements PipeTransform {
+  /**
+   * A simple angular2 pipe which truncate strings.
+   * The total number of character returned by this filter is value.length + trail.length
+   *
+   * @example `{{ "Some too long string" | truncate }}`
+   * @example `{{ "Some too long string" | truncate :15 }}`
+   * @example `{{ "Some too long string" | truncate :15:'--' }}`
+   * @example `{{ "Some too long string" | truncate :15:'--':'left }}`
+   * @example `{{ "Some too long string" | truncate :15:null:'middle" }}`
+   *
+   * @param {string} value Input string passed to the filter
+   * @param {string} [limit=10] The number of kept characters. If the `value` string has more than `limit` characters, they will be replaced by the `trail` string.
+   * @param {string} [trail="..."] The string which will replace extra characters
+   * @param {string} [position="right"] The position of replacement string. Allowed values are 'left' | 'right' | 'middle'
+   * @returns {string}
+   */
   transform(value: string, limit: number, trail: string, position: string): string {
     limit = limit || 10;
     trail = trail || '...';
