@@ -31,18 +31,25 @@ Use the pipe directly in your HTML files/templates:
 <span>{{ name | truncate }}</span>
 <!-- angular2-t... -->
 
-<span>{{ name | truncate : 5 }}</span>
-<!-- angul... -->
+<span>{{ name | truncate : 6 }}</span>
+<!-- angula... -->
 
-<span>{{ name | truncate : 5 : '___' }}</span>
-<!-- angul___ -->
+<span>{{ name | truncate : 6 : '___' }}</span>
+<!-- angula___ -->
+
+<span>{{ name | truncate : 6 : '___' : 'left' }}</span>
+<!-- ___uncate -->
+
+<span>{{ name | truncate : 6 : null : 'middle' }}</span>
+<!-- ang...ate -->
 ```
 
 ### Parameters
-| Parameter name | Type   | Default value |
-| -------------- | ------ | ------------- |
-| limit          | number | 10            |
-| trail          | string | '...'         |
+| Parameter name | Type   | Default value | Comment                                             |
+| -------------- | ------ | ------------- | --------------------------------------------------- |
+| limit          | number | 10            |                                                     |
+| trail          | string | '...'         |                                                     |
+| position       | string | 'right'       | Allowed values are: `'left'`, `'middle'`, `'right'` |
 
 ## Development
 
