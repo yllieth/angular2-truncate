@@ -16,13 +16,14 @@ export class TruncatePipe implements PipeTransform {
    * @example `{{ "Some too long string" | truncate :15:'--':'left }}`
    * @example `{{ "Some too long string" | truncate :15:null:'middle" }}`
    *
-   * @param {string} value Input string passed to the filter
+   * @param {string} value Input string passed to the filter.
    * @param {string} [limit=10] The number of kept characters. If the `value` string has more than `limit` characters, they will be replaced by the `trail` string.
-   * @param {string} [trail="..."] The string which will replace extra characters
-   * @param {string} [position="right"] The position of replacement string. Allowed values are 'left' | 'right' | 'middle'
+   * @param {string} [trail="..."] The string which will replace extra characters.
+   * @param {string} [position="right"] The position of replacement string. Allowed values are 'left' | 'right' | 'middle'.
    * @returns {string}
    */
   transform(value: string, limit: number, trail: string, position: string): string {
+    value = value || '';  // handle undefined/null value
     limit = limit || 10;
     trail = trail || '...';
     position = position || 'right';
